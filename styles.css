@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #696D7D; /* Gris oscuro */
+    --color-secundario: #FAF3DD; /* Beige */
+    --color-terciario: #8FC0A9; /* Verde medio */
+    --color-boton: #68B0AB; /* Verde azulado */
+    --color-boton-hover: #5B9596; /* Verde azulado oscuro para hover */
+    --color-boton-secondary: #C8D5B9; /* Verde claro */
+    --color-boton-secondary-hover: #A9B796; /* Verde claro oscuro para hover */
+    --fuente-montserrat: 'Montserrat', sans-serif; /* Fuente Montserrat */
+    --fuente-krona: 'Krona One', sans-serif; /* Fuente Krona One */
+}
+
+/* Resetea padding, margin y box-sizing para todos los elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el body y html */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: var(--fuente-montserrat);
+    background-color: var(--color-boton); /* Fondo principal */
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para el contenedor de la cabecera */
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-secundario); /* Beige */
+    text-align: center; /* Centra el contenido textual */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido del flex container */
+    align-items: center; /* Centra verticalmente el contenido del flex container */
+}
+
+/* Estilo para el título de la cabecera */
+.header-title {
+    font-family: var(--fuente-krona);
+    font-size: 2.25rem;
+    color: var(--color-primario);
+    margin-left: 0; /* Elimina margen izquierdo */
+}
+
+
+/* Estilo para el contenedor principal */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+    height: calc(100% - 55px); /* Ajuste dinámico de la altura */
+}
+
+/* Estilo para el contenedor de entrada */
+.input-container {
+    width: 49%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-secundario); /* Beige */
+    border-radius: 10px;
+    box-shadow: none; /* Elimina el borde del contenedor */
+}
+
+/* Estilo para el título de entrada */
+.input-title {
+    font-size: 1.5rem;
+    color: var(--color-terciario); /* Verde medio */
+    background-color: transparent;
+    justify-content: baseline; /* Fondo transparente */
+}
+
+/* Estilo para los textareas */
+textarea {
+    width: 400px; /* Ancho del textarea */
+    height: 78px; /* Alto del textarea */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-family: var(--fuente-montserrat);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Estilo para las alertas */
+.alert {
+    font-size: 1rem;
+    color: var(--color-terciario); /* Verde medio */
+    margin-top: 10px;
+    text-align: center; /* Centra el texto de la alerta */
+}
+
+/* Estilo para el contenedor de botones */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+/* Estilo para los botones */
+button {
+    width: 328px; /* Ancho de los botones */
+    height: 60px; /* Alto de los botones */
+    border: none;
+    background-color: var(--color-boton); /* Verde azulado */
+    color: white;
+    border-radius: 17px; /* Botones ligeramente redondeados */
+    cursor: pointer;
+    margin: 10px 5px 5px 5px; /* Margen ajustado */
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    white-space: nowrap; /* Evita que el texto se salga del botón */
+    overflow: hidden; /* Esconde el texto que se sale */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos si el texto es demasiado largo */
+}
+
+/* Estilo para los botones en hover */
+button:hover {
+    background-color: var(--color-boton-hover); /* Verde azulado oscuro para hover */
+}
+
+/* Estilo para el botón de desencriptar */
+button#decryptBtn {
+    background-color: var(--color-boton-secondary); /* Verde claro */
+}
+
+/* Estilo para el botón de desencriptar en hover */
+button#decryptBtn:hover {
+    background-color: var(--color-boton-secondary-hover); /* Verde claro oscuro para hover */
+}
+
+/* Estilo para el contenedor de salida */
+.output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secundario); /* Beige */
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Estilo para la imagen de salida */
+.output-image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el mensaje de salida */
+.output-message {
+    margin: 0;
+    color: var(--color-primario);
+    text-align: center;
+    font-weight: bold; /* Texto en negrilla */
+}
+
+/* Estilo para las instrucciones de salida */
+.output-instruction {
+    margin-top: 10px;
+    color: var(--color-primario);
+    text-align: center;
+}
+
+/* Estilo para el textarea de salida */
+textarea#outputText {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+    resize: none;
+    font-family: var(--fuente-montserrat);
+}
+
+/* Estilo para el botón de copiar */
+button#copyBtn {
+    width: 250px; /* Ancho del botón Copiar */
+    height: 55px; /* Alto del botón Copiar */
+    border: none;
+    background-color: var(--color-boton); /* Verde azulado */
+    color: white;
+    border-radius: 10px; /* Botón ligeramente redondeado */
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+}
+
+/* Estilo para el botón de copiar en hover */
+button#copyBtn:hover {
+    background-color: var(--color-boton-hover); /* Verde azulado oscuro para hover */
+}
+
+/* Media Query para pantallas de tamaño 1200px o menor */
+@media (max-width: 1200px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container, .output-container {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .output-container {
+        margin-top: 30px; /* Añade un margen superior de 30px para crear el espacio de 3 cm */
+    }
+
+    .output-image {
+        display: none;
+    }
+
+    button {
+        width: calc(100% - 20px); /* Ancho completo menos padding */
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Query para pantallas de tamaño de tablet y móvil */
+@media (max-width: 768px) {
+    textarea {
+        width: 90%; /* Ajusta el ancho del textarea */
+    }
+
+    .buttons button {
+        width: 90%; /* Ancho completo para botones */
+    }
+
+    .output-container {
+        width: 90%; /* Ancho completo del contenedor de salida */
+    }
+}

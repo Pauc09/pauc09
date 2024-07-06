@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Encriptador de Texto</h1>
+    </header>
+    <main class="main-container">
+        <section class="input-container">
+            <h2 class="input-title">Ingrese el texto aquí</h2>
+            <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="alert">Solo letras minúsculas y sin acentos</div>
+            <div class="buttons">
+                <button id="encryptBtn">Encriptar</button>
+                <button id="decryptBtn">Desencriptar</button>
+            </div>
+        </section>
+        <section class="output-container">
+            <img src="/figma/Imagenpng.png" alt="Image" class="output-image">
+            <p class="output-message">Ningún mensaje fue encontrado</p>
+            <p class="output-instruction">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
+            <button id="copyBtn">Copiar</button>
+        </section>
+    </main>
+    <script src="logica.js"></script>
+</body>
+</html>
+
