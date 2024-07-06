@@ -1,13 +1,6 @@
 ### Hi there 👋
 
 
-Here are some ideas to get you started:
+Hola mi nombre es Paula, 
+En esta rama encontrara una posible solución para el challenge de Oracle incriptador de texto.
 
-- 🔭 I’m currently working on Regatta 
-- 🌱 I’m currently learning Python
-- 👯 I’m looking to collaborate on Projects
-- 🤔 I’m looking for help with life 
-- 💬 Ask me about my favorite book
-- 📫 How to reach me: paue
-- 😄 Pronouns: She
-- ⚡ Fun fact: I paid for...
