@@ -1,5 +1,7 @@
 # Taller OpenCV - Procesamiento de Imágenes
 
+## Paula Caballero
+
 ## Ejercicios Implementados
 
 ### Punto 1: Conversión RGB → HSV
